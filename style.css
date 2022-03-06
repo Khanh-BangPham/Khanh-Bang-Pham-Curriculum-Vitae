@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    background-color: rgb( 129, 129, 129);
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(0,0,0,1); 
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0, 1);
+}
+
+.container .general{
+    position: relative;
+    background-color: rgb(37, 52, 71);
+    margin-top: 15px;
+    color: #ffffff;
+    width: 25vw;
+}
+
+.container .general .background-img{
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% + 15px);
+    background: url("./background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    top: -15px;
+}
+
+.container .title{
+    margin: 20px 40px 40px 15px;
+}
+
+.container .general .title #name{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 70px;
+}
+.container .general .title .working{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.container .content{
+    margin: 20px 40px 40px 15px;
+    font-size: 15px;
+}
+
+.container .content p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 1rem 0;
+}
+
+.container .content span {
+    display: inline-block;
+    margin: .2em 0;
+}
+
+.container .content span b{
+    font-weight: 700;
+}
+
+.container .content .about .introduce{
+    margin: 20px 0;
+}
+
+.container .details{
+    width: 30vw;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.container .details h3{
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+.container .details span{
+    display: inline-block;
+    margin: .2rem 0;
+    margin-left: 1rem;
+}
+
+.container .details p{
+    font-weight: bold;
+    margin: 0.5rem 0;
+    font-size: 17px;
+}
+
+button{
+    position: absolute;
+    bottom: 1vh;
+    cursor: pointer;
+    left: 20px;
+    background-color: rgb(129, 129, 129);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover {
+    background-color: rgb(37, 52, 71);
+  }
+@media only screen and (max-width: 1200px) {
+    .container .general{
+        width: 30vw;
+    }
+    .container .details{
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container .general{
+        width: 40vw;
+    }
+    .container .details{
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container .general{
+        width: 35vw;
+    }
+    .container .details{
+        width: 45vw;
+    }
+    button{
+        left: 10px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .container .general .title {
+        margin: 20px 10px 30px 10px;
+    }
+    .container .general .title #name{
+        font-size: 50px;
+    }
+    .container .general .title .working{
+        font-size: 12px;
+    }
+    .container .content {
+        margin: 20px 10px 30px 10px;
+        font-size: 12px;
+    }
+    .container .content p{
+        margin: 0.3rem 0;
+        font-size: 15px;
+    }
+    .container .content span{
+        width: 100%;
+        word-wrap: break-word;
+        margin: 0;
+    }
+    .container .details{
+        font-size: 12px;
+        padding: 30px 10px;
+    }
+    .container .details h3{
+        font-size: 17px;
+        margin: 0.5rem 0;
+    }
+    .container .details p{
+        font-size: 15px;
+        margin: 0.3rem 0;
+    }
+    .container .details span{
+        margin: 0;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .container .general{
+        width: 40vw;
+    }
+    .container .details{
+        width: 50vw;
+    }
+    .container .general .title #name{
+        font-size: 40px;
+    }
+    .container .general .title .working{
+        font-size: 10px;
+    }
+    .container .content {
+        font-size: 10px;
+    }
+    .container .content p{
+        font-size: 12px;
+    }
+    .container .content span{
+        width: 100%;
+    }
+    .container .details{
+        padding: 30px 10px;
+        font-size: 10px;
+    }
+    .container .details h3{
+        font-size: 15px;
+    }
+    .container .details p{
+        font-size: 12px;
+    }
+}
